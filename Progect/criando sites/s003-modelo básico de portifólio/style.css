@@ -1,0 +1,116 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #d3d0d0d3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    background-color: #fff;
+    min-width: 280px;
+    max-width: 700px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px ;
+    margin: 0 auto;
+}
+
+header > h3{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+header nav{
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+nav > a{
+    color: #000000bc;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 8px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: #4040fb;
+    color: #fff;
+}
+
+.container{
+    background-color: #fff;
+    min-width: 280px;
+    max-width: 700px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.container-art .titulo{
+    font-weight: bolder;
+    font-size: 3em;
+    padding: 5px 0px;
+    margin-left: 50px;
+}
+
+.container-art .subt{
+    color: #2626e8e3;
+    padding: 5px 0px;
+    margin-left: 50px;
+}
+
+.container-art > p{
+    color: rgba(0, 0, 0, 0.653);
+    font-weight: 100;
+    text-align: justify;
+    padding: 10px 0px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.container-art a{
+    background-color: #2626e8e3;
+    color: #fff;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin-left: 50px;
+    border-radius: 8px;
+}
+
+.section{
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 20px;
+    margin: 40px 50px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.132);
+    
+}
+
+div{
+    display: inline-block;
+    text-align: justify;
+    width: 150px;
+    height: 200px;
+    padding: 20px;
+    margin-left: 50px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.132);
+}
+
+div > h2{
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+div > p{
+    color: rgba(0, 0, 0, 0.653);
+}
+

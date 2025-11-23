@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabelas grandes</title>
+    <style>
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        table{
+            max-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 500px;
+            margin: auto;
+            border-collapse: collapse;
+            position: relative;
+            overflow-y: auto;
+        }
+        caption{
+            background-color: lightgrey;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        thead, tfoot{
+             background-color: rgb(66, 65, 65);
+             color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: rgb(66, 65, 65);
+            z-index: 2;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+        th{
+             border: 1px solid black;
+             padding: 8px;
+        }
+        td{
+             border: 1px solid black;
+             padding: 8px;
+        }
+        .num{
+            text-align: right;
+        }
+        .nump{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+                <th scope="col" style="width: 80px;">% da pop. total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+                <td class="nump">21.9%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+                <td class="nump">10.1%</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+                <td class="nump">8.2%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+                <td class="nump">7.1%</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+                <td class="nump">5.4%</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+                <td class="nump">4.5%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 132 078</td>
+                <td class="nump">4.3%</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 602 865</td>
+                <td class="nump">4.1%</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 164 788</td>
+                <td class="nump">3.4%</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+                <td class="nump">21.9%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+                <td class="nump">10.1%</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+                <td class="nump">8.2%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+                <td class="nump">7.1%</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+                <td class="nump">5.4%</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+                <td class="nump">4.5%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 132 078</td>
+                <td class="nump">4.3%</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 602 865</td>
+                <td class="nump">4.1%</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+                <td class="nump">21.9%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+                <td class="nump">10.1%</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+                <td class="nump">8.2%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+                <td class="nump">7.1%</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+                <td class="nump">5.4%</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+                <td class="nump">4.5%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 132 078</td>
+                <td class="nump">4.3%</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 602 865</td>
+                <td class="nump">4.1%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td><strong>0000</strong></td>
+                <td><strong>000%</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ab quibusdam velit tenetur explicabo dolores facilis, deserunt reiciendis? Asperiores recusandae autem iste architecto voluptates. Iure eveniet dolorem itaque doloremque aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit maxime magni reprehenderit aliquid accusantium? Et iusto aperiam labore. Praesentium ea totam inventore atque ut pariatur repellat aspernatur facere impedit labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum ut voluptatem culpa, eligendi quae inventore quos error velit itaque? Obcaecati mollitia eveniet voluptatibus incidunt eum asperiores aliquam velit illo!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ab quibusdam velit tenetur explicabo dolores facilis, deserunt reiciendis? Asperiores recusandae autem iste architecto voluptates. Iure eveniet dolorem itaque doloremque aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit maxime magni reprehenderit aliquid accusantium? Et iusto aperiam labore. Praesentium ea totam inventore atque ut pariatur repellat aspernatur facere impedit labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum ut voluptatem culpa, eligendi quae inventore quos error velit itaque? Obcaecati mollitia eveniet voluptatibus incidunt eum asperiores aliquam velit illo!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ab quibusdam velit tenetur explicabo dolores facilis, deserunt reiciendis? Asperiores recusandae autem iste architecto voluptates. Iure eveniet dolorem itaque doloremque aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit maxime magni reprehenderit aliquid accusantium? Et iusto aperiam labore. Praesentium ea totam inventore atque ut pariatur repellat aspernatur facere impedit labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum ut voluptatem culpa, eligendi quae inventore quos error velit itaque? Obcaecati mollitia eveniet voluptatibus incidunt eum asperiores aliquam velit illo!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ab quibusdam velit tenetur explicabo dolores facilis, deserunt reiciendis? Asperiores recusandae autem iste architecto voluptates. Iure eveniet dolorem itaque doloremque aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit maxime magni reprehenderit aliquid accusantium? Et iusto aperiam labore. Praesentium ea totam inventore atque ut pariatur repellat aspernatur facere impedit labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum ut voluptatem culpa, eligendi quae inventore quos error velit itaque? Obcaecati mollitia eveniet voluptatibus incidunt eum asperiores aliquam velit illo!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ab quibusdam velit tenetur explicabo dolores facilis, deserunt reiciendis? Asperiores recusandae autem iste architecto voluptates. Iure eveniet dolorem itaque doloremque aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit maxime magni reprehenderit aliquid accusantium? Et iusto aperiam labore. Praesentium ea totam inventore atque ut pariatur repellat aspernatur facere impedit labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum ut voluptatem culpa, eligendi quae inventore quos error velit itaque? Obcaecati mollitia eveniet voluptatibus incidunt eum asperiores aliquam velit illo!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ab quibusdam velit tenetur explicabo dolores facilis, deserunt reiciendis? Asperiores recusandae autem iste architecto voluptates. Iure eveniet dolorem itaque doloremque aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit maxime magni reprehenderit aliquid accusantium? Et iusto aperiam labore. Praesentium ea totam inventore atque ut pariatur repellat aspernatur facere impedit labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum ut voluptatem culpa, eligendi quae inventore quos error velit itaque? Obcaecati mollitia eveniet voluptatibus incidunt eum asperiores aliquam velit illo!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ab quibusdam velit tenetur explicabo dolores facilis, deserunt reiciendis? Asperiores recusandae autem iste architecto voluptates. Iure eveniet dolorem itaque doloremque aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit maxime magni reprehenderit aliquid accusantium? Et iusto aperiam labore. Praesentium ea totam inventore atque ut pariatur repellat aspernatur facere impedit labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum ut voluptatem culpa, eligendi quae inventore quos error velit itaque? Obcaecati mollitia eveniet voluptatibus incidunt eum asperiores aliquam velit illo!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ab quibusdam velit tenetur explicabo dolores facilis, deserunt reiciendis? Asperiores recusandae autem iste architecto voluptates. Iure eveniet dolorem itaque doloremque aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit maxime magni reprehenderit aliquid accusantium? Et iusto aperiam labore. Praesentium ea totam inventore atque ut pariatur repellat aspernatur facere impedit labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum ut voluptatem culpa, eligendi quae inventore quos error velit itaque? Obcaecati mollitia eveniet voluptatibus incidunt eum asperiores aliquam velit illo!</p>
+</body>
+</html>

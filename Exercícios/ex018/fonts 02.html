@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas baixadas</title>
+    <style>
+        /*O @font-face serve para configurarmos a nossa fonte externa*/
+        @font-face {
+            /*Definimos o nome da nossa font*/
+            font-family: "monkey";
+            /*Usamos a url do nosso arquivo*/
+            src: url("fonts/Howdy Monkey.otf") format("opentype")/*Usamos sempre o formato dos nosso arquivos*/, 
+            url("fonts/Howdy Monkey.ttf") format("truetype");
+
+            /*Os formatos das fonts são:
+                - opentype(otf);
+                - truetype(ttf);
+                - embedsed-opentype;
+                - truetype-aat(apple advanced typography);
+                - svg.
+            */
+        }
+        body{
+            background-color: black;
+            color: white;
+            width: 400px;
+            height: 400px;
+    
+        }
+        h1, h2{
+            font-family: "monkey", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iste eaque minus sapiente, adipisci molestiae, corporis provident deserunt nulla ipsa laudantium, architecto ducimus magni dolores consectetur unde sit. Molestias, aut!</p>
+    <h2>Subtitulo</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, ad tenetur quidem modi quo ea? In veritatis ratione cupiditate aut numquam suscipit, perspiciatis perferendis vel, fuga neque pariatur provident esse?</p>
+</body>
+</html>

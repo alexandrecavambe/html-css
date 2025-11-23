@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em html</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferente ou simplesmente aumente e diminui o tamanho do seu navegador</p>
+
+   <picture>
+    <source media="(max-width: 750px)" srcset="imagem/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagem/foto-m.png" type="image/png">
+    <img src="imagem/foto-g.png" alt="Imagem flexível">
+   </picture>
+   <h2>Reproduzindo áudios</h2>
+   <p>Estou aprendendo a reproduzir áudios em html 5</p>
+   <!--<audio src="midia/VMZ Manhã Sem Sol.mp3" controls>VMZ-manhã sem sol</audio>
+
+   <!-Podemos usar a tag de aúdio dessa outra forma-->
+   <audio controls>
+        <source src="midia/VMZ Manhã Sem Sol.mp3" type="audio/mpeg">
+        
+        <p>Infelizmente seu navegador não consegue reproduzir áudio</p>
+   </audio>
+</body>
+</html>

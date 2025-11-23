@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*
+        Aqui o "display: none;" esconde o paragrafo dentro da div
+        */
+        div > p{
+            display: none;
+        }
+        /*Usando "div:hover >p", estaremos configurando tudo que tem a ver com o paragrafo dentro da div, mas usando a pseudo class hover*/
+        div:hover > p{
+            display: block;
+            background-color: rgba(24, 24, 210, 0.633);
+        }
+        div:hover{
+            color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos De Hover</h1>
+    <p>Passe o mouse sobre o texto</p>
+    <div>
+        Passe o mouse aqui
+        <p>Texto Escondido</p>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>

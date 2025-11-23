@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(255, 255, 255, 0.013);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+header{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 280px;
+    max-width: 700px;
+    padding: 10px;
+    margin: auto;
+}
+header > h3{
+    padding: 10px;
+}
+
+.menu > a{
+    color: rgba(0, 0, 0, 0.867);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 15px;
+    transition-duration: 0.2s;
+    
+}
+.menu > a:hover{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+.container{
+    background-color: #fff;
+    min-width: 280px;
+    max-width: 700px;
+    padding: 20px;
+    min-height: 86vh;
+    margin: auto;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.066);
+}
+.container-sobre-mim{
+    background-color: #fff;
+    min-width: 280px;
+    max-width: 700px;
+    padding: 20px;
+    min-height: 86vh;
+    margin: auto;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.066);
+}
+.container-sobre-mim .sobre-mim{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.sobre-mim .text > h2{
+    font-size: 2em;
+    padding: 10px 0;
+}
+.sobre-mim .text > p{
+    margin-right: 50px;
+}
+.container-sobre-mim > p{
+    margin-right: 40px;
+    text-align: justify;
+}
+.sobre-mim .foto img{
+    width: 200px;
+    height: 210px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+.container-contact{
+    background-color: #fff;
+    min-width: 280px;
+    max-width: 700px;
+    padding: 40px;
+    margin: auto;
+    min-height: 86vh;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.066);
+}
+
+.container-contact .contact{
+    padding: 30px 40px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+.container-contact .contact form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-contact .contact form > label{
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.736);
+}
+
+.input-textarea{
+    background-color: rgba(128, 128, 128, 0.145);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.187);
+    border-radius: 4px;
+    min-width: 400px;
+    font-size: 1em;
+    resize: none;
+
+}
+
+.button-enviar{
+    background-color: black;
+    color: #fff;
+    width: 90px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 8px;
+    transition-duration: 0.5s;
+}
+
+.button-enviar:hover{
+    background-color: transparent;
+    color: black;
+}
+
+.container > h1{
+    font-weight: bolder;
+    font-size: 3em;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.container > p{
+    color: rgba(0, 0, 0, 0.847);
+    text-align: justify;
+    padding-bottom: 30px;
+
+}
+
+.container > a{
+    background-color: black;
+    color: #ffffffd4;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container > a:hover{
+    color: #fff;
+}
+
+.container > div{
+            display: flex;
+            justify-content: space-between;
+}
+
+div > p{
+    text-align: justify;
+    margin-right: 10px;
+}
+
+footer{
+    background-color: #fff;
+    text-align: center;
+    min-width: 280px;
+    max-width: 700px;
+    padding: 10px;
+    margin: auto;
+}
