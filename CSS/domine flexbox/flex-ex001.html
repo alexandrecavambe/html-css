@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex Flexbox</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+           height: 100vh;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           background-color: aqua;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            /*align-items: center;*/
+            flex-wrap: wrap;
+            align-content: center;
+            gap: 5px;
+            background-color: white;
+            border: 20px solid rgb(1, 1, 41);
+            width: 700px;
+            height: 700px;
+            padding: 10px;
+        }
+        .itens{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+        }
+        .itens:hover{
+            background-color: rgb(70, 229, 89);
+            transition: 1s;
+        }
+        .item-1{
+            background-color: rebeccapurple;
+        }
+        .item-2{
+            background-color: violet;
+        }
+        .item-3{
+            background-color: blueviolet;
+        }
+        .item-4{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="itens item-1"></div>
+        <div class="itens item-2"></div>
+        <div class="itens item-3"></div>
+        <div class="itens item-4"></div>
+        <div class="itens item-1"></div>
+        <div class="itens item-2"></div>
+        <div class="itens item-3"></div>
+        <div class="itens item-4"></div>
+        <div class="itens item-1"></div>
+        <div class="itens item-2"></div>
+        <div class="itens item-3"></div>
+        <div class="itens item-4"></div>
+        <div class="itens item-1"></div>
+        <div class="itens item-2"></div>
+        <div class="itens item-3"></div>
+        <div class="itens item-4"></div>
+        <div class="itens item-1"></div>
+        <div class="itens item-2"></div>
+    </main>
+</body>
+</html>
