@@ -6,6 +6,9 @@
     <title>CSS Grid</title>
     <style>
         body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding: 40px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             background-color: darkgray;
@@ -15,9 +18,14 @@
             /*grid-template-columns: 100px 100px 100px;
             grid-template-rows: 100px 100px 100px;*/
             /*Criando linhas e colunas usando grid repeat*/
-            grid-template-columns: repeat(6, 100px);
-            grid-template-rows: repeat(6, 100px);
-            width: 600px;
+            /*grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);*/
+            grid-template-columns: 100px 2fr minmax(100px, 1fr);
+            grid-template-rows: repeat(4, 100px);
+            /*grid-auto-flow: column;
+            grid-auto-columns: 100px;*/
+            gap: 1em;
+            width: 50%;
             border: 10px solid rgb(2, 2, 35);
         }
         .itens{
@@ -34,19 +42,25 @@
             grid-row-end: 3;*/
 
             /*As propriedades acima, podem ser resuminas da seguinte maneira:*/
-            grid-column: 1 / 5;
-            grid-row: 1 / 3;
+            /*grid-column: 1 / 7;
+            grid-row: 1 / 3;*/
         }
         /*Podemos usar o "span" para expandir as colunas e linhas*/
         .item-2{
            /*grid-column: 5 / 7;
            grid-row: 1 / 3;*/
 
-           grid-column: span 2;
-           grid-row: span 2;
+           /*grid-column: span 2;
+           grid-row: span 2;*/
+
+           /*grid-area: 2 / 4 / 4 / 6;
+           z-index: 1;*/
         }
+        /*Podemos usar também a propriedade "grid-area", que é a junção do grid-column e grid-row.
+        
+        A ordem das propriedades é: row-start col-start row-end col-end*/
         .item-3{
-           
+           /*grid-area: 3 / 1 / 7 / 7;*/
         }
         
     </style>
@@ -56,6 +70,7 @@
         <div class="itens item-1">1</div>
         <div class="itens item-2">2</div>
         <div class="itens item-3">3</div>
+        <!--<div class="itens item-4">4</div>-->
     </main>
 </body>
 </html>
