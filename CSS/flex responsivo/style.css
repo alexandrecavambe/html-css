@@ -1,0 +1,30 @@
+body{
+    display: flex;                /* Torna o body um flex container */
+    justify-content: center;      /* Centraliza horizontalmente o conteúdo */
+    align-items: center;          /* Centraliza verticalmente o conteúdo */
+    padding: 40px;                /* Espaçamento interno ao redor da página */
+}
+.container{
+    display: flex;                /* Flex container para os blocos internos */
+    flex-direction: row;          /* Coloca os elementos lado a lado numa linha */
+    flex-wrap: wrap;              /* Permite que os itens "quebrem" linha (responsivo) */
+    width: 700px;                 /* Largura fixa do container */
+    padding: 10px;                /* Espaço interno */
+    border: 1px solid rgba(0, 0, 0, 0.716); /* Borda do container */
+}
+div{
+    flex-grow: 1;                 /* Permite que cada div cresça para ocupar espaço */
+    flex-basis: 200;              /* Tamanho base do item (sugestão de largura) */
+    width: 120px;                 /* Largura inicial do item */
+    height: 120px;                /* Altura fixa do item */
+    margin: 5px;                  /* Espaço entre os blocos */
+    border-radius: 5px;           /* Bordas arredondadas */
+}
+div.div1{
+    background-color: #8a2be2;    /* Cor de fundo roxa */
+    border: 5px solid #c45567;    /* Borda rosa avermelhada */
+}
+div.div2{
+    background-color: #c45567;    /* Cor de fundo rosa avermelhada */
+    border: 5px solid #8a2be2;    /* Borda roxa */
+}
