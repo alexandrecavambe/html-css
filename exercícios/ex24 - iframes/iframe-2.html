@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegando no iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+        iframe{
+            border: 4px solid rgba(0, 0, 0, 0.599);
+            width: 100%;
+            height: 320px;
+            padding-right: 10px;
+        }
+        li{
+            padding: 5px;
+        }
+        li a{
+            text-decoration: none;
+            padding: 5px;
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+        a:hover{
+            background-color: blueviolet;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, vitae? Molestias soluta sunt accusamus dolores assumenda impedit reprehenderit, eaque fugiat! Vero omnis voluptatem ex quam cum earum totam atque esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptates maxime distinctio excepturi! Vitae voluptates, quidem aut alias magni qui commodi facilis libero, quasi aspernatur, veniam repellendus. Incidunt, culpa minus.</p>
+    <ul>
+        <li><a href="iframe-1.html" target="frame">Primeira página</a></li>
+        <li><a href="Páginas-extras/iframe-page2.html" target="frame">Segunda página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, est voluptatibus voluptas ducimus odit repudiandae ea earum fuga magnam, consequatur delectus? Obcaecati blanditiis fugiat aperiam omnis suscipit dolorum. Suscipit, repellat?</p>
+    <iframe src="" frameborder="0" id="tela" name="frame">
+        [Seu navegador não é compatível com iframe]
+    </iframe>
+</body>
+</html>
