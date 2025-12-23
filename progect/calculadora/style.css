@@ -9,12 +9,15 @@
     color: #fff;
 }
 h1{
-    
+    text-align: center;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
 }
 
 .calc{
     position: absolute;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.918);
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -26,20 +29,35 @@ h1{
     text-align: center;
     padding: 8px;
 }
-#text{
-    height: 40px;
-    border: none;
-}
-#text::placeholder{
-    align-items: flex-end;
-}
  .botao{
     width: 50px;
     height: 50px;
     font-size: 20px;
     cursor: pointer;
+    margin: 3px;
     background-color: rgb(31, 31, 31);
     border: none;
     color: #fff;
-    border-radius: 10px;
+ }
+ .botao:hover{
+    background-color: #000000ea;
+ }
+ .botao:active{
+    border: 1px solid #fff;
+    transition-duration: 0.5s;
+ }
+
+ div.input{
+    width: 217px;
+    border: none;
+ }
+ #result{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+    width: 100%;
+    font-size: 1.2em;
+    padding-top: 15px;
+    padding-bottom: 2px;
+    padding-right: 4px;
+    margin-left: 4px;
  }
