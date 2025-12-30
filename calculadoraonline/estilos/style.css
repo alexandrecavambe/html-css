@@ -25,38 +25,50 @@
 
  .container-calc{
     height: 350px;
-    width: 750px;
+    width: 770px;
+    padding: 10px;
     margin: auto;
     border: 2px solid black;
  }
  nav{
     display: flex;
     flex-direction: column;
-    padding: 30px 8px;
+    padding: 8px;
  }
  .nav-result{
     display: flex;
     justify-content: space-between;
+    padding: 20px 0px;
  }
  nav > button{
-    padding: 5px 35px;
+    padding: 5px 30px;
+    margin-top: 5px;
     border-radius: 20px;
  }
  .result{
-    padding: 20px 35px;
+    width: 500px;
  }
 .result > p{
-    background-color: rgba(211, 211, 211, 0.488);
+    background-color: rgba(211, 211, 211, 0.168);
     font-size: 8.9px;
     padding: 5px;
     border-radius: 10px;
+    text-align: right;
 }
 .result .resultado{
-    font-size: 2em;
+    font-size: 2.5em;
+    padding-top: 5px;
     padding-left: 150px;
+    width: 100%;
+    text-align: right;
 }
  .container-calc .item{
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(10, 70px);
+    grid-template-rows: repeat(5, 35px);
+    gap: 5px;
+ }
+
+ .itens{
+    border: 2px solid black;
  }
