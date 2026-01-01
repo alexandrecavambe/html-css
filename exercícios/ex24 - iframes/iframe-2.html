@@ -10,10 +10,12 @@
             text-align: justify;
         }
         iframe{
+            display: block;
             border: 4px solid rgba(0, 0, 0, 0.599);
-            width: 100%;
+            width: 90vw;
             height: 320px;
             padding-right: 10px;
+            margin: auto;
         }
         li{
             padding: 5px;
@@ -38,7 +40,7 @@
         <li><a href="Páginas-extras/iframe-page2.html" target="frame">Segunda página</a></li>
     </ul>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, est voluptatibus voluptas ducimus odit repudiandae ea earum fuga magnam, consequatur delectus? Obcaecati blanditiis fugiat aperiam omnis suscipit dolorum. Suscipit, repellat?</p>
-    <iframe src="" frameborder="0" id="tela" name="frame">
+    <iframe srcdoc="<h1>Escolha uma das páginas acima.</h1><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias deserunt possimus nobis harum dignissimos quis doloremque, soluta, deleniti dolores unde quibusdam, quasi aliquid? Commodi et distinctio fugiat molestias facere? Omnis!</p>" frameborder="0" id="tela" name="frame">
         [Seu navegador não é compatível com iframe]
     </iframe>
 </body>
