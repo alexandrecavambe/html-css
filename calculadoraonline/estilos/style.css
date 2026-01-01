@@ -1,10 +1,15 @@
+:root{
+   --cor-botões-nav: #834cff;
+   --cor-botões-calc: #dfe3f6;
+   --cor-botões-num:#c47205;
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
  body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
  }
 
  header{
@@ -25,10 +30,11 @@
 
  .container-calc{
     height: 350px;
-    width: 770px;
+    width: 760px;
     padding: 10px;
     margin: auto;
     border: 2px solid black;
+    border-radius: 10px;
  }
  nav{
     display: flex;
@@ -38,27 +44,33 @@
  .nav-result{
     display: flex;
     justify-content: space-between;
-    padding: 20px 0px;
+    padding: 0 0 35px 0;
  }
  nav > button{
-    padding: 5px 30px;
+    background-color: var(--cor-botões-nav);
+    color: #fff;
+    padding: 8px 35px;
     margin-top: 5px;
     border-radius: 20px;
+    border: none;
+ }
+ nav > button:hover{
+    cursor: pointer;
  }
  .result{
     width: 500px;
  }
-.result > p{
-    background-color: rgba(211, 211, 211, 0.168);
+.result p{
     font-size: 8.9px;
+    color: gray;
     padding: 5px;
     border-radius: 10px;
     text-align: right;
 }
 .result .resultado{
-    font-size: 2.5em;
-    padding-top: 5px;
-    padding-left: 150px;
+    font-size: 2.8em;
+    padding-top: 20px;
+    padding-right: 20px;
     width: 100%;
     text-align: right;
 }
@@ -66,9 +78,28 @@
     display: grid;
     grid-template-columns: repeat(10, 70px);
     grid-template-rows: repeat(5, 35px);
-    gap: 5px;
+    gap: 4px;
  }
 
  .itens{
-    border: 2px solid black;
+   background-color: var(--cor-botões-calc);
+   font-size: 1em;
+   border: 2px solid black;
+ }
+ .itens:hover{
+   background-color: #adb5db;
+   cursor: pointer;
+ }
+ .itens-num{
+   background-color: var(--cor-botões-num);
+ }
+ .itens-num:hover{
+   background-color: #ff9100;
+ }
+ .itens-m{
+   font-weight: bolder;
+ }
+ .itens .destaque{
+   font-style: italic;
+   color: rgb(5, 5, 150);
  }
