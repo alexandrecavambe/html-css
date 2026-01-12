@@ -6,7 +6,7 @@
     <title>Contatar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
-    <link rel="stylesheet" href="SRC/estilos/style.css">
+    <link rel="stylesheet" href="SRC/estilos/import.css">
 </head>
 <body>
 
@@ -131,9 +131,73 @@
                 </a>
             </div>
         </section>
+
         <section class="contact-form-container">
-            
+            <form method="post" class="contact-form">
+                <div class="input-group">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" required>
+
+                </div>
+
+                <div class="input-group">
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="subject">Assunto</label>
+                    <input type="text" name="subject" id="subject" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="massage">Mensagem</label>
+                    <textarea name="message" id="message"required rows="5">
+                    </textarea>
+                </div>
+
+                <button type="submit">Enviar mensagem</button>
+            </form>
         </section>
     </main>
+
+    <footer>
+        <img src="SRC/img/logo-light.png" alt="Logo" class="footer-logo">
+        <div class="footer-link-content">
+            <ul class="footer-list">
+                <li>
+                    <h3 class="list-title">
+                        Blog
+                    </h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Tecnologia</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Programação</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Design</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3 class="list-title">
+                        Produtos
+                    </h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">App</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Desktop</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Cloud</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
