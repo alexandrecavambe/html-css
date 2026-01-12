@@ -1,8 +1,159 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: radial-gradient(circle, var(--primary-color-1), var(--primary-color-2));
+}
+
+.page-title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0px;
+
+    h2{
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1rem;
+        color: var(--secondary-color);
+    }
+
+    h1{
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 3rem;
+        color: #fff;
+    }
+    p{
+        font-size: 1rem;
+        font-weight: 400;
+        color: #e2e8f0;
+        margin-top: 8px;
+        max-width: 65%;
+        text-align: center;
+    }
+}
+.container{
+    background-color: #f1effd;
+    border-radius: 32px 32px 0px 0px;
+    padding: 32px 8%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    .contacts-container{
+        width: 50%;
+
+        h3{
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        p{
+            font-size: 1rem;
+            font-weight: 400;
+            color: #010002;
+            width: 80%;
+        }
+
+        h4{
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #010002;
+            margin-top: 16px;
+        }
+
+        .cards-container{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 24px 0px;
+
+            .contact-card{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+                background-color: #fff;
+                padding: 18px 12px;
+                border-radius: 8px;
+                text-decoration: none;
+                transition: 0.3s;
+
+
+                &:hover{
+                    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+                }
+
+                .card-icon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-width: 40px;
+                    min-height: 40px;
+                    max-width: 40px;
+                    max-height: 40px;
+                    border-radius: 100%;
+                    font-size: 1.2rem;
+                }
+
+                .card-infos{
+                    p{
+                        font-size: 1rem;
+                        font-weight: 400;
+                        line-height: 1rem;
+                        color: #010002;
+                    }   
+                    
+                    span{
+                        font-size: 0.8rem;
+                        font-weight: 500;
+                        color: #475569;
+                    }
+                }
+
+                &.phone{
+                    .card-icon{
+                        background-color: #FAF5ED;
+                        color: #CD9C4B;
+                    }
+                }
+
+                 &.location{
+                    .card-icon{
+                        background-color: #DBEAFE;
+                        color: #3B82F6;
+                    }
+                }
+
+                &.email{
+                    .card-icon{
+                        background-color: #EDE9FE;
+                        color: #8B5CF6;
+                    }
+                }
+
+                &.whatsapp{
+                    .card-icon{
+                        background-color: #DCFCE7;
+                        color: #16A34A;
+                    }
+                }
+            }
+        }
+    }
+
+    .contacts-form-container{
+        width: 50%;
+    }
 }
