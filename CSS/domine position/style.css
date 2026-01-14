@@ -1,0 +1,132 @@
+body{
+    min-height: 200vh;
+}
+
+
+
+/*Situação Para O Uso Do "Position: static;"*/
+/*
+header{
+    position: sticky;
+    top: 0;
+    background-color: aqua;
+}
+
+@media screen and (max-width: 500px) {
+    header{
+        position: static;
+    }
+}
+*/
+
+/*Situação Para O Uso Do "Position: relative;"*/
+
+/*h1{
+    position: relative; /*Não acontece nada no elemnto*/
+    /*top: 40px; /*Dará um espaço de 40px no topo do /elemento*/
+    /*left: 40px;/*Dará um espaço de 40px no lado esquerdo do elemento*/
+   /* background-color: gold;
+   Podemos usar também o z-index combinando com essas mesmas propriedades, ele define a sobreposição de um elemento.
+
+    z-index: 2;
+} */   
+ 
+/*O bottom: ; dá um espaço pra baixo do elemento, fazendo ele subir pra cima.*/
+/*p{
+    position: relative;
+    background-color: aqua;
+    z-index: 1;
+}*/ 
+
+
+/*O "position: absolute;" muda a posição do elemento em relação a um elemento ancestral que não possui um "position: static;"*/
+
+/*
+.container{
+    position: relative;
+    background-color: blueviolet;
+    padding: 40px ;
+    height: 500px;
+}
+
+h1{
+
+position: absolute;
+    background-color: greenyellow;
+}
+
+p{
+    background-color: aqua;
+}
+*/
+
+/*Exemplo de um card com botão de ler mais usando o position: absolute;*/
+
+
+.container{
+    position: relative;
+    background-color: blueviolet;
+    padding: 40px ;
+    height: 500px;
+}
+
+.container h1{
+    position: absolute;
+    top: 60px;
+    background-color: greenyellow;
+}
+ .card{
+     background-color: #d4d3d3;
+     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    margin-top: 50px;
+    position: relative;
+}
+
+ .card:hover .ler-mais{
+     opacity: 1;
+ }
+
+ .ler-mais{
+     position: absolute;
+     bottom: 20px;
+     left: 50%;
+     background-color: blueviolet;
+     color: #ffffff;
+     border: none;
+     border-radius: 8px;
+    padding: 10px 20px;
+    opacity: 0;
+}
+
+
+/*O position: fixed; também sai do fluxo normal da página, que nem o absolute, só que fixo.
+
+Ele também vai se posicionar sempre em relação a página inteira*/
+
+/*Ex: Criar um botão flutuante de whatsapp*/
+
+.whatsapp-fixed-button{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border: none;
+    background-color: #25d366;
+    
+    img{
+        width: 35px;
+    }
+}
+
+
+/*Uso do "position: sticky;". normalmente usado em navbar, heaserbar fixo, ou flutuante. ele tem um comportamento meio "relative", porq não sai do fluxo normal da página e meio "fixed", porq ele fixa o elemento, sem o top: ; bottom: ; right: ; e o left: ;, ele não deixa os elementos flutuante*/
+
+header{
+    position: sticky;
+    top: 30px;
+    z-index: 3;
+    background-color: aqua;
+}
