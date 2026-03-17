@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Function</title>
+    <style>
+        body{
+            height: 100vh;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            width: 300px;
+            background-color: #e0e0e0;
+            padding: 10px;
+        }
+
+        .item{
+            width: 30px;
+            height: 30px;
+            background-color: #6369f1;
+        }
+
+        .item-r{
+            width: 30px;
+            height: 30px;
+            background-color: #6369f1;
+        }
+        /*Essa é o padrão, começa devagar, acelera, e depois desacelera no final*/
+        .ease{
+            transition: transform 1s ease;
+        }
+        /*Tem a mesma velocidade do inicio ao fim*/
+        .linear{
+            transition: transform 1s linear;
+        }
+        /*Começa devagar e termina rápido*/
+        .ease-in{
+            transition: transform 1s ease-in;
+        }
+        /*Começa rápido e termina devagar*/
+        .ease-out{
+            transition: transform 1s ease-out;
+        }
+        /*Começa devagar, acelera no meio e desacelera no final*/
+        .ease-in-out{
+            transition: transform 1s ease-in-out;
+        }
+        .steps{
+            transition: transform 1.5s steps(5);
+        }
+
+        .cubic-bezier{
+            transition: transform 1.5s cubic-bezier(0.95,0.24,0.42,1.05);
+        }
+
+        .container:hover .item{
+            transform: translateX(270px);
+        }
+
+    </style>
+</head>
+<body>
+    <h4>ease</h4>
+    <div class="container">
+        <div class="item ease"></div>
+    </div>
+    <h4>linear</h4>
+    <div class="container">
+        <div class="item linear"></div>
+    </div>
+
+    <h4>ease-in</h4>
+    <div class="container">
+        <div class="item ease-in"></div>
+    </div>
+
+    <h4>ease-out</h4>
+    <div class="container">
+        <div class="item ease-out"></div>
+    </div>
+
+    <h4>ease-in-out</h4>
+    <div class="container">
+        <div class="item ease-in-out"></div>
+    </div>
+
+    <h4>steps</h4>
+    <div class="container">
+        <div class="item steps"></div>
+    </div>
+
+    <h4>cubic-bezier</h4>
+    <div class="container">
+        <div class="item cubic-bezier"></div>
+    </div>
+
+
+    
+</body>
+</html>
