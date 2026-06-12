@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <div>
+            <label for="in1">Number 1</label> <br>
+            <input type="number" name="n1" id="in1" oninput="soma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </div>
+        <div>
+            <label for="in2">Number 2</label> <br>
+            <input type="number" name="n2" id="in2" oninput="soma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </div>
+
+        <div>
+            <label for="in2">Soma</label> <br>
+            <output id="soma">0</output>
+        </div>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

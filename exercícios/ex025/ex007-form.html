@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select, Datalist e Textarea</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <div>
+            <label for="country">País</label>
+            <select name="" id="country">
+                <option value="">-----Escolha um país-----</option>
+                <optgroup label="Países africanos">
+                    <option value="Ao">Angola</option>
+                    <option value="Mz">Moçambique</option>
+                    <option value="Cv">Cabo verde</option>
+                </optgroup>
+                <optgroup label="Países europeus">
+                    <option value="Pt">Portugal</option>
+                    <option value="Fr">França</option>
+                    <option value="Es">Espanha</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="profiss">Profissão</label>
+            <input type="text" name="" id="profiss" list="listprofi">
+            <datalist id="listprofi">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contabilidade</option>
+                <option value="DEV">Desenvolvedor</option>
+            </datalist>
+        </div>
+        
+        <div>
+            <label for="msg">Mensagem</label> <br>
+            <textarea name="" id="msg" cols="20" rows="10"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
