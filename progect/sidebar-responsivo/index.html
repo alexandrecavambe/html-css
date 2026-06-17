@@ -9,50 +9,83 @@
 </head>
 <body>
     <nav id="sidebar">
-        <div id="user">
-            <img src="src/img/avatar.png" id="user-avatar" alt="Avatar" width="100">
-
-            <div id="user-info">
-                <span>Alexandre Cavambe</span>
-                <span>Lorem ipsum dolor sit amet.</span>
+        <div id="sidebar-content">
+            <div id="user">
+                <img src="src/img/avatar.png" alt="Avatar" id="user-avatar">
+    
+                <div id="user-info">
+                    <span class="item-describe">_djemex</span>
+                    <span class="item-describe">Lorem ipsum dolor</span>
+                </div>
             </div>
+    
+            <ul id="side-itens">
+                <li class="side-item active">
+                    <a href="#">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span class="item-describe">
+                            Dashboard
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="item-describe">
+                            Usuários
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="item-describe">
+                            Notificações
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-box"></i>
+                        <span class="item-describe">
+                            Produtos
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-image"></i>
+                        <span class="item-describe">
+                            Imagens
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="item-describe">
+                            Configurações
+                        </span>
+                    </a>
+                </li>
+            </ul>
+    
+            <button id="open-btn">
+                <i class="fa-solid fa-chevron-right" id="open-btn-icon"></i>
+            </button>
         </div>
 
-        <ul id="side-itens">
-            <li class="side-item">
-                <a href="#">
-                    <i class="fa-solid fa-chart-line"></i>
-                    <span class="item-describe">
-                        Dashboard
-                    </span>
-                </a>
-            </li>
-            <li class="side-item">
-                <a href="#">
-                    <i class="fa-solid fa-user"></i>
-                    <span class="item-describe">
-                        Usuários
-                    </span>
-                </a>
-            </li>
-            <li class="side-item">
-                <a href="#">
-                    <i class="fa-solid fa-bell"></i>
-                    <span class="item-describe">
-                        Notificações
-                    </span>
-                </a>
-            </li>
-            <li class="side-item">
-                <a href="#">
-                    <i class="fa-solid fa-box"></i>
-                    <span class="item-describe">
-                        Produtos
-                    </span>
-                </a>
-            </li>
-        </ul>
+        <div id="logout">
+            <button id="logout-btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="item-logout item-describe">Logout</span>
+            </button>
+        </div>
     </nav>
+
+    <main>
+        <h1>Titulo</h1>
+    </main>
     <script src="src/javascript/"></script>
 </body>
 </html>
